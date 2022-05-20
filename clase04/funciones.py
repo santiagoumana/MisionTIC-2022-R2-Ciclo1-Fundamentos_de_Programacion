@@ -1,5 +1,4 @@
-
-from math import pi, sqrt, sin, floor, ceil, degrees
+from math import sqrt, sin, floor, ceil, degrees, pi, cos
 
 print(sqrt(121))
 print(sin(pi/4))

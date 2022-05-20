@@ -1,4 +1,4 @@
-import mis_funciones as mias
+import mis_funciones as mf
 import math as m
 
 #mf.ejercicio1()
