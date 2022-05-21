@@ -1,6 +1,19 @@
 #10
-from ejercicios_clase6 import factura_acueducto
-
+from ejercicios_clase6 import factura_acueducto #biblioteca
+def factura_acueducto(estrato: int, consumo: float, tarifas: dict):
+    #validacion
+    if estrato < 1 or estrato > 6:
+        return "El estrato debe estar entre 1 y 6"
+    if consumo < 0:
+        return "el consumo debe ser 0 o superior"
+   
+   #proceso   
+    valor_factura = tarifas[estrato]["cargo_fijo"]
+    valor_factura += consumo * tarifas[estrato]["metro_cubico"]
+    valor_factura += tarifas[estrato]["basuras"]
+  
+   # salida
+    return valor_factura # biblioteca
 #prueba
 tarifas = {
         1: { "cargo_fijo": 2500, "metro_cubico": 2200, "basuras": 5500},                          
