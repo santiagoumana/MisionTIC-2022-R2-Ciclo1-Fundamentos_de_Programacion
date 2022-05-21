@@ -3,8 +3,11 @@
                                 #parametros funcion
 def desperdicio_de_gaseosa (amigo1, amigo2, amigo3, capacidad_boton):
     pass #instruccion de pase a la sgte linea
-if ["capacidad_vaso"] - ["capacidad_actual"] > 5 ("se le riega la gaseosa"):
-        else "no se le riega la gaseosa"
+capacidad_boton = 5.0
+se_riega = (capacidad_boton) + ["capacidad_actual"]
+if se_riega > 5:
+        ["capacidad_vaso"]
+
 
 amigo1 = {
         "nombre": "harold stiven",
