@@ -40,7 +40,7 @@ def read_one(id: int) -> dict:
     item = todos[id].copy()
     item["id"] = id
     return item
-
+#lectura de tareas
 def exist(id: int) -> bool:
     """ Verifica si existe un identificador en el almacén de datos.
     Parámetros:

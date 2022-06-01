@@ -15,7 +15,7 @@ def menu_principal():
 
         entrada = True
         while entrada:
-            try:
+            try: #bloque donde las instru pueden generar un error, reciab y haga lo sgte con el except
                 opcion = int(input("Ingrese una opción: "))
                 if opcion in range(6):
                     entrada = False
@@ -36,7 +36,7 @@ def menu_principal():
             eliminar_tarea()
         elif opcion == 0:
             mainloop = False
-            print("Ha salido exitosamente.")
+            print("Ha salido exitosamente.")       
         else:
             print("Valor inválido!")
 
@@ -46,11 +46,11 @@ def imprimir_titulo(mensaje: str):
     print("=" * 30)
 
 def imprimir_titulo_tarea(): 
-    print(f"{'Id':>3s} {'Descripción':30s} {'Estado':15s} {'Tiempo(min)'}")
-    print("-" * 63)
+    print(f"{'Id':>3s} {'Descripción':60s} {'Estado':15s} {'Tiempo(min)'}")
+    print("-" * 73)
 
 def imprimir_tarea(tarea): 
-    print(f"{tarea['id']:3d} {tarea['descripcion'].capitalize():30s} {tarea['estado'].capitalize():15s} {tarea['tiempo']:10d}")
+    print(f"{tarea['id']:3d} {tarea['descripcion'].capitalize():60s} {tarea['estado'].capitalize():15s} {tarea['tiempo']:10d}")
 
 def listar_tareas():
     imprimir_titulo("Listado de Tareas")
@@ -66,7 +66,7 @@ def consultar_tarea():
     imprimir_titulo("Consultar Tarea")
 
     #Solicitar al usuario el identificador
-    id = int(input("Ingrese identificador de la Tarea para modificar: "))
+    id = int(input("Ingrese identificador de la Tarea para consultar: "))
    
     #Lectura de tareas
     if exist(id):
