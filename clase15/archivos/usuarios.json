@@ -1,0 +1,29 @@
+[
+  {
+    "nombre": "C\u00e9sar D\u00edaz",
+    "email": "cesar.a.diaz@gmail.com",
+    "edad": 41,
+    "profesor": true,
+    "grupos": [
+      {
+        "curso": "Fundamentos de programaci\u00f3n",
+        "numero": 3
+      },
+      {
+        "curso": "Fundamentos de programaci\u00f3n",
+        "numero": 12
+      },
+      {
+        "curso": "Fundamentos de programaci\u00f3n",
+        "numero": 69
+      }
+    ]
+  },
+  {
+    "nombre": "Sebastian Murillo",
+    "email": "sebastian.murillo@gmail.com",
+    "edad": 30,
+    "profesor": false,
+    "grupo": 3
+  }
+]
